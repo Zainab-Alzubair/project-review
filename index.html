@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple survey form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <h1 id="title">For the collection of diagrams of people learning programming</h1>
+    <p id="description">We are just gathering info about tons of newcommers into programming</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Type your name..." required>
+      <br>
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Type your email..." required>
+      <br>
+      <label for="number" id="number-label">Number</label>
+      <input id="number" type="number" placeholder="Type your number" min="1000000000" max="10000000000000">
+      <br>
+      <br>
+      <label for="">Which option best describes your current role?</label><br>
+      <select name="" id="dropdown">
+        <option value="full-time Job">Full-time Job</option>
+        <option value="part-time Job">Part-time Job</option>
+        <option value="full-time learner">Full-time Learner</option>
+        <option value="prefer not to say">Prefer not to say</option>
+      </select>
+      <br>
+      <br>
+      <label for="">Are you above 13?</label>
+      <br>
+      <label for="above-yes">Yes
+        <input type="radio" name="isAbove" value="yes" id="above-yes"/>
+      </label>
+      <label for="above-no">No
+        <input type="radio" name="isAbove" value="no" id="above-no" />
+      </label>
+      <br>
+      <br>
+      <label for="">What language(s) are you learning?</label><br>
+      <label for="javascript">
+        <input type="checkbox" value="javascript">
+        Javascript
+      </label>
+      <br>
+      <label for="java">
+        <input type="checkbox" value="java">
+        java
+      </label>
+      <br>
+      <label for="ruby">
+        <input type="checkbox" value="ruby">
+        ruby
+      </label>
+      <br>
+      <label for="python">
+        <input type="checkbox" value="python">
+        python
+      </label>
+      <br>
+      <label for="C++">
+        <input type="checkbox" value="C++">
+        C++
+      </label>
+
+      <br>
+      <br>
+      <label for="comment">Any comments or suggestions?
+      </label><br>
+        <textarea name="comment" id="comment" ></textarea>
+        <br>
+        <button id="submit">Submit</button>
+    </form>
+
+
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
